@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador — CEP e Pokémon</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h1>Buscador de CEP e Pokémon</h1>
+
+    <section class="card">
+        <h2>Buscar Endereço por CEP</h2>
+        <input type="text" id="cep" placeholder="Digite o CEP (apenas números)" maxlength="9">
+        <button id="btnBuscar">Buscar CEP</button>
+        <p class="carregando" id="carregandoCep">Buscando endereço...</p>
+        <div class="erro" id="erroCep"></div>
+        <div id="resultadoCep"></div>
+    </section>
+
+    <br><br>
+
+    <section class="card">
+        <h2>Buscar Pokémon</h2>
+        <input type="text" id="pokemon" placeholder="Nome ou número">
+        <button id="btnBuscarPoke">Buscar Pokémon</button>
+        <p class="carregando" id="carregandoPoke">Buscando Pokémon...</p>
+        <div class="erro" id="erroPoke"></div>
+        <div id="resultadoPoke"></div>
+    </section>
+
+    <br><br>
+
+    <button id="btnLimpar">Limpar Tudo</button>
+
+    <div id="resultado"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
