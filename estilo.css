@@ -84,7 +84,8 @@ button:disabled {
 }
 
 #resultadoCep,
-#resultadoPoke {
+#resultadoPoke,
+#listaBanco {
     margin-top: 15px;
     padding: 12px;
     background: #f0fdf4;
@@ -92,14 +93,28 @@ button:disabled {
     border-left: 4px solid #22c55e;
 }
 
-ul {
-    margin: 5px 0;
-    padding-left: 20px;
+.item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
 img {
     margin: 10px 0;
     display: block;
+}
+
+form div {
+    margin: 12px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
 }
 
 #btnLimpar {

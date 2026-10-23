@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador — CEP e Pokémon</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
@@ -32,11 +32,38 @@
 
     <br><br>
 
+   <section class="card">
+        <h2> Cadastrar Pokémon no Banco</h2>
+        <form id="formCadastro">
+            <div>
+                <label>Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div>
+                <label>Tipo:</label>
+                <input type="text" id="tipo" required>
+            </div>
+            <div>
+                <label>Altura (m):</label>
+                <input type="number" step="0.01" id="altura" required>
+            </div>
+            <div>
+                <label>Peso (kg):</label>
+                <input type="number" step="0.01" id="peso" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="mensagemCadastro"></p>
+    </section>
+
+    <section class="card">
+        <h2>Pokémons Cadastrados</h2>
+        <button id="btnAtualizar"> Atualizar Lista</button>
+        <div id="listaBanco"></div>
+    </section>
+
     <button id="btnLimpar">Limpar Tudo</button>
 
-    <div id="resultado"></div>
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
